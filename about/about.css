@@ -1,0 +1,377 @@
+/*  ////////////////
+    Main titles format
+*/
+
+.about-us-content-title,
+.main-offers-title,
+.staff-title,
+.review-title-container h2,
+.about-us-content-title {
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+}
+
+/*  //////////////// */
+
+.about-us-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f0f4ff;
+}
+
+.about-us-title-container {
+  padding: 100px 0;
+  max-height: 500px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+.main-about-us-content-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.about-us-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.about-us-content {
+  width: 48%;
+}
+
+.about-us-content-title,
+.about-us-content-p {
+  width: 100%;
+  max-width: 500px;
+}
+
+.about-us-content-p {
+  line-height: 22px;
+}
+
+.about-us-content-btn-container {
+  margin-top: 20px;
+}
+
+.tel-contact {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+
+.tel-contact i {
+  margin: 0 10px 0 30px;
+  background-color: white;
+  padding: 12px;
+  border-radius: 50%;
+  color: black;
+  font-size: 16px;
+}
+
+.about-us-content-img-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 52%;
+  height: 70vh;
+  overflow: hidden;
+  margin: 0 15px;
+  border-radius: 5px;
+}
+
+.about-us-content-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ///////////////////////// */
+
+/* Reviews */
+
+.review-main-container {
+  width: 100%;
+  max-height: 100vh;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.review-container {
+  padding: 100px 0;
+  width: 75%;
+  margin: 0 auto;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.review-title-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.review-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 20px; /* Space between cards */
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-card {
+  background: rgb(250, 250, 250);
+  border-radius: 10px;
+  padding: 20px;
+  width: 350px;
+  height: 350px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.middle-card {
+  transform: scale(1.13); /* Slight zoom effect on hover */
+}
+
+.review-img-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid white;
+  overflow: hidden;
+}
+
+.review-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-text-container {
+  width: 80%;
+  height: 180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.review-text-container h3 {
+  font-size: 22px;
+  margin: 10px auto;
+}
+
+.stars {
+  color: #e98c27;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* ///// */
+
+.main-offers-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f0f4ff;
+  padding-bottom: 50px; /* Prevent elements from sticking to the bottom */
+}
+
+.main-offers-title-container {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.all-offers-container {
+  max-width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+  justify-items: center;
+}
+
+.offer-container {
+  width: 100%;
+  max-height: 550px;
+  background: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px; /* Adds smooth corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  overflow: hidden; /* Ensures content doesn't overflow */
+  transition: transform 0.3s ease-in-out;
+}
+
+.offer-container:hover {
+  transform: scale(1.03); /* Slight zoom effect on hover */
+}
+
+.offer-container-img-wrapper {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+}
+
+.offer-container-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image maintains aspect ratio */
+  object-position: center 40%;
+}
+
+.move-img {
+  object-position: center 30%;
+}
+
+.offer-title-container {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.offer-title-container h3 {
+  margin-bottom: 25px;
+  font-size: 23px;
+}
+
+/* trainers */
+
+.main-staff-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f4ff;
+}
+
+.staff-container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.staff-title-container {
+  width: 100%;
+  padding-top: 50px;
+  text-align: left;
+}
+
+.staff-trainers-container {
+  max-width: 100%;
+  height: auto;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  justify-items: center;
+}
+
+.trainer {
+  width: 100%;
+  max-height: 650px;
+  background: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 10px; /* Adds smooth corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  overflow: hidden; /* Ensures content doesn't overflow */
+  transition: transform 0.3s ease-in-out;
+}
+
+.trainer-img-wrapper {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.trainer-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.trainer-description-container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  transform: translateY(200%);
+  z-index: 1;
+}
+
+.trainer-description-name {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+.trainer-description-par {
+  font-size: 14px;
+}
+
+.trainer-description-name,
+.trainer-description-par {
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Adds a subtle shadow for readability */
+}
+
+.trainer:hover {
+  transform: scale(1.03);
+}
+
+.trainer:hover .trainer-description-container {
+  transform: translateY(150%);
+  transition: transform 0.4s ease-in-out;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adds a slight dark overlay for readability */
+  color: #fff; /* Ensures text is visible */
+  padding: 20px;
+}
+
+/* TAKE CARE
+ */
+.take-care-container {
+  width: 100%;
+  height: 600px;
+  background: url("../img/staff/take-care-photo.jpg") no-repeat center;
+  background-size: cover; /* Adjust the size */
+  background-position: center 40%; /* Move the background down */
+}
+
+.take-care-title-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.take-care-title {
+  width: 43%;
+  text-align: center;
+  color: #f5f5f5;
+  font-size: 50px;
+  text-shadow: 2px 2px 5px black;
+  transform: translateY(-50px);
+}
+
+.take-care-btn {
+  padding: 20px 50px;
+}
