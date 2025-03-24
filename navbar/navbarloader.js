@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <nav class="nav-bar">
   <div class="div-navbar">
     <div class="logo">
-      <img src="../img/logo-removebg-preview.png" alt="logo" />
+      <img src="C:\Users\Lukas\Documents\GitHub\EquestrianWeb\img\logo-removebg-preview.png" alt="logo" />
     </div>
     <button class="hamburger-menu-navbar">
       <i class="bx bx-menu"></i>
