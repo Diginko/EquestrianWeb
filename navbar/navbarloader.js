@@ -27,31 +27,28 @@ document.addEventListener("DOMContentLoaded", function () {
       <nav class="nav-bar">
   <div class="div-navbar">
     <div class="logo">
-      <img src="C:\Users\Lukas\Documents\GitHub\EquestrianWeb\img\logo-removebg-preview.png" alt="logo" />
+      <img src="../img/logo-removebg-preview.png" alt="logo" />
     </div>
     <button class="hamburger-menu-navbar">
       <i class="bx bx-menu"></i>
     </button>
     <div class="links-container">
       <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li class="about"><a >About</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="about"><a href="About.html" >About</a></li>
         <div class="about-sub-container">
           <ul class="about-sub-ul">
             <li class="about-sub-li">
-              <a href="../about/about.html">About Us</a>
+              <a href="about.html#about-us-article">About Us</a>
             </li>
             <li class="about-sub-li">
-              <a href="../ourstaff/ourstaff.html">Our Staff</a>
+              <a href="about.html#reviews-article">Reviews</a>
             </li>
             <li class="about-sub-li">
-              <a href="../services/services.html">Services</a>
+              <a href="about.html#offers-article">Services</a>
             </li>
             <li class="about-sub-li">
-              <a href="../faq/faq.html">FAQs</a>
-            </li>
-            <li class="about-sub-li">
-              <a href="../prices/prices.html">Prices</a>
+              <a href="about.html#staff-article">Our Staff</a>
             </li>
           </ul>
         </div>
