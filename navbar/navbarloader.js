@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="links-container">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li class="about"><a href="about.html" >About</a></li>
+        <li class="about"><a href="/about.html" >About</a></li>
         <div class="about-sub-container">
           <ul class="about-sub-ul">
             <li class="about-sub-li">
