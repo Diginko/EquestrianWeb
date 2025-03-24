@@ -35,20 +35,20 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="links-container">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li class="about"><a href="about/about.html" >About</a></li>
+        <li class="about"><a href="about.html" >About</a></li>
         <div class="about-sub-container">
           <ul class="about-sub-ul">
             <li class="about-sub-li">
-              <a href="about/about.html#about-us-article">About Us</a>
+              <a href="about.html#about-us-article">About Us</a>
             </li>
             <li class="about-sub-li">
-              <a href="about/about.html#reviews-article">Reviews</a>
+              <a href="about.html#reviews-article">Reviews</a>
             </li>
             <li class="about-sub-li">
-              <a href="about/about.html#offers-article">Services</a>
+              <a href="about.html#offers-article">Services</a>
             </li>
             <li class="about-sub-li">
-              <a href="about/about.html#staff-article">Our Staff</a>
+              <a href="about.html#staff-article">Our Staff</a>
             </li>
           </ul>
         </div>
