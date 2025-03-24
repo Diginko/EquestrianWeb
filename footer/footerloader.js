@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 <div class="footer-container">
   <div class="footer-navbar">
     <div class="logo">
-      <img src="../img/logo-removebg-preview.png" alt="logo" loading="lazy" />
+      <img src="img/logo-removebg-preview.png" alt="logo" loading="lazy" />
     </div>
     <div class="footer-social">
       <a href="https://www.facebook.com/" aria-label="Visit our Facebook page"

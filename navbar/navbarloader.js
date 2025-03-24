@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <nav class="nav-bar">
   <div class="div-navbar">
     <div class="logo">
-      <img src="../img/logo-removebg-preview.png" alt="logo" />
+      <img src="img/logo-removebg-preview.png" alt="logo" />
     </div>
     <button class="hamburger-menu-navbar">
       <i class="bx bx-menu"></i>
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="links-container">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li class="about"><a href="About.html" >About</a></li>
+        <li class="about"><a href="about.html" >About</a></li>
         <div class="about-sub-container">
           <ul class="about-sub-ul">
             <li class="about-sub-li">
