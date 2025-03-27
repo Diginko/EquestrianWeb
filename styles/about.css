@@ -96,46 +96,52 @@
 
 .review-main-container {
   width: 100%;
-  max-height: 100vh;
+  min-height: 70vh;
   background-color: #f5f5f5;
   overflow: hidden;
 }
 
 .review-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   padding: 100px 0;
-  width: 75%;
+  width: 85%;
   margin: 0 auto;
-  height: auto;
-  overflow: hidden;
+  height: 100%;
   position: relative;
 }
 
 .review-title-container {
   text-align: center;
   padding: 20px;
+  margin-bottom: 50px;
 }
 
 .review-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   width: 100%;
-  gap: 20px; /* Space between cards */
-  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
   align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
 }
 
 .testimonial-card {
   background: rgb(250, 250, 250);
   border-radius: 10px;
   padding: 20px;
-  width: 350px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   flex-shrink: 0;
-  transition: transform 0.5s ease-in-out;
 }
 
 .middle-card {
-  transform: scale(1.13); /* Slight zoom effect on hover */
+  transform: scale(1.1);
 }
 
 .review-img-wrapper {
@@ -157,7 +163,6 @@
 
 .review-text-container {
   width: 80%;
-  height: 180px;
   margin: 0 auto;
   text-align: center;
 }
@@ -179,7 +184,7 @@
   width: 100%;
   min-height: 100vh;
   background-color: #f0f4ff;
-  padding-bottom: 50px; /* Prevent elements from sticking to the bottom */
+  padding-bottom: 50px;
 }
 
 .main-offers-title-container {
@@ -205,14 +210,14 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  border-radius: 10px; /* Adds smooth corners */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-  overflow: hidden; /* Ensures content doesn't overflow */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
   transition: transform 0.3s ease-in-out;
 }
 
 .offer-container:hover {
-  transform: scale(1.03); /* Slight zoom effect on hover */
+  transform: scale(1.03);
 }
 
 .offer-container-img-wrapper {
@@ -224,7 +229,7 @@
 .offer-container-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures image maintains aspect ratio */
+  object-fit: cover;
   object-position: center 40%;
 }
 
@@ -251,7 +256,8 @@
 
 .main-staff-container {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 50px 0;
   background-color: #f0f4ff;
 }
 
@@ -279,13 +285,12 @@
 .trainer {
   width: 100%;
   max-height: 650px;
-  background: #ffffff;
+  background: transparent;
   text-align: center;
   display: flex;
   flex-direction: column;
   position: relative;
-  border-radius: 10px; /* Adds smooth corners */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+
   overflow: hidden; /* Ensures content doesn't overflow */
   transition: transform 0.3s ease-in-out;
 }
@@ -294,6 +299,8 @@
   width: 100%;
   height: 500px;
   overflow: hidden;
+  border-radius: 10px; /* Adds smooth corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
 }
 
 .trainer-img-wrapper img {
@@ -370,8 +377,80 @@
   font-size: 50px;
   text-shadow: 2px 2px 5px black;
   transform: translateY(-50px);
+  margin-bottom: 20px;
 }
 
 .take-care-btn {
   padding: 20px 50px;
+}
+
+/* MEDIA QUERYS FOR RESPISIBLE DESING FOR DIFERENCE DEVICE */
+
+/* Tablets (481px to 768px) */
+@media (max-width: 768px) {
+  .about-us-title-container {
+    padding: 50px 0; /* Reduce padding for smaller screens */
+    font-size: 1.2rem; /* Smaller font size for the title */
+  }
+
+  .main-about-us-content-container {
+    height: auto; /* Allow content to expand naturally */
+    padding: 50px 10px; /* Add some padding around the content */
+  }
+
+  .about-us-content-container {
+    flex-direction: column; /* Stack content vertically on smaller screens */
+    width: 90%; /* Make the content container wider */
+    margin: 0 auto;
+  }
+
+  .about-us-content {
+    width: 100%; /* Let the content take the full width on smaller screens */
+    margin-bottom: 20px; /* Add space between content sections */
+  }
+
+  .about-us-content-img-wrapper {
+    width: 100%; /* Make the image take the full width */
+    height: 50vh; /* Adjust image height */
+    margin: 0 0 20px 0; /* Add margin below the image */
+  }
+
+  .about-us-content-title,
+  .about-us-content-p {
+    max-width: 100%; /* Allow text to take full width */
+  }
+
+  .about-us-content-btn-container {
+    display: flex; /* Center align buttons */
+    flex-direction: column;
+  }
+
+  .about-us-content-btn {
+    width: 180px;
+    margin-bottom: 10px;
+  }
+
+  .tel-contact i {
+    margin: 0 10px 0 0px; /* Adjust margin for icons on smaller screens */
+  }
+
+  .all-offers-container {
+    max-width: 90%;
+  }
+
+  .review-wrapper {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .middle-card {
+    transform: none;
+  }
+
+  .trainer {
+    width: 80%;
+  }
+
+  .take-care-title {
+    font-size: 40px;
+    width: 70%;
+  }
 }

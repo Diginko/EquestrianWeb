@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     <div class="links-container">
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li class="about"><a>About</a></li>
+        <li class="about"><a href="about.html" id="about-a">About</a></li>
         <div class="about-sub-container">
           <ul class="about-sub-ul">
             <li class="about-sub-li">
@@ -52,28 +52,37 @@ document.addEventListener("DOMContentLoaded", function () {
             </li>
           </ul>
         </div>
-        <li><a href="#">Horses</a></li>
-        <li><a href="#">Contacts</a></li>
+        <li><a href="horses.html">Horses</a></li>
+        <li><a href="contacts.html">Contacts</a></li>
       </ul>
     </div>
   </div>
 </nav>
   `;
-  navbarSubHover();
 });
 
 window.addEventListener("resize", navbarSubHover);
 window.addEventListener("load", navbarSubHover);
 
+//Kontrola či sa jedna o mobilne zariadenie. Ak ano funkcia vráti TRUE
 function isMobileView() {
   return window.innerWidth <= 768;
 }
 
-function isDesktopView() {
-  return window.innerWidth > 768;
+//tlačidlo ABOUT funguje ako preklik na stranku ABOUT len v prípade ak sa jedna o mobilne zaradenie.
+function setHref() {
+  const about = document.querySelector("#about-a");
+  if (isMobileView()) {
+    about.removeAttribute("href");
+  } else {
+    about.href = "about.html";
+  }
 }
 
 function navbarSubHover() {
+  isMobileView();
+  setHref();
+  hamMenu();
   let timeout;
 
   const aboutBtn = document.querySelector(".about");
@@ -90,8 +99,7 @@ function navbarSubHover() {
       aboutContainer.classList.remove("activenavbar");
     }, 150);
   };
-
-  if (isDesktopView()) {
+  if (!isMobileView()) {
     aboutBtn.addEventListener("mouseover", () => {
       clearTimeout(timeout); // Stop any hide delay
       aboutContainer.classList.add("activenavbar");
@@ -107,8 +115,9 @@ function navbarSubHover() {
     aboutContainer.addEventListener("mouseout", hideContainer);
   }
 
+  isMobileView();
+
   if (isMobileView()) {
-    hamMenu();
     aboutBtn.addEventListener("click", () => {
       clearTimeout(timeout); // Stop any hide delay
       aboutContainer.classList.toggle("activenavbar");

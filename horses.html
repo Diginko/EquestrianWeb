@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="DigisWebs" />
+    <meta
+      name="description"
+      content="This is training web for Equestrian riding center"
+    />
+
+    <link rel="stylesheet" href="navbar/navbar.css" />
+    <link rel="stylesheet" href="footer/footer.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/horses.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link rel="icon" href="img/logo-removebg-preview.png" type="image/x-icon" />
+    <title>Equestrian Riding Center</title>
+  </head>
+  <body>
+    <header id="navbar-space-container">
+      <!-- HERE IS PLACE FOR NAVBAR LOADED FROM JS -->
+    </header>
+    <main>
+      <button id="backToTop" class="back-to-top">↑</button>
+      <div class="main-horses-container">
+        <div class="horses-container scroll-animation slide-down">
+          <h1>Our Horses</h1>
+          <p>
+            Welcome to our stable! Browse through the horses we have in our
+            care.
+          </p>
+        </div>
+
+        <div class="filter scroll-animation scale">
+          <label for="breed"><p class="filter-p">Filter by Breed:</p></label>
+          <select id="breed">
+            <option value="all">All Breeds</option>
+            <option value="thoroughbred">Thoroughbred</option>
+            <option value="warmblood">Warmblood</option>
+            <option value="clydesdale">Clydesdale</option>
+            <option value="arabian">Arabian</option>
+            <option value="quarterhorse">Quarter Horse</option>
+            <option value="hanoverian">Hanoverian</option>
+          </select>
+        </div>
+
+        <div class="horse-list">
+          <div
+            class="horse-card scroll-animation scale"
+            data-breed="thoroughbred"
+          >
+            <h2>Midnight Glory</h2>
+            <img
+              src="img/horses/Thoroughbred2-1.jpg"
+              alt="Midnight Glory"
+              class="horse-image"
+            />
+            <p><span class="title-span">Breed:</span> Thoroughbred</p>
+            <p><span class="title-span">Age:</span> 7 years</p>
+            <p>
+              <span class="title-span">Training Level:</span> Advanced Dressage
+            </p>
+            <p>
+              <span class="title-span">Specialty:</span> Dressage, Show Jumping
+            </p>
+            <p>
+              <span class="title-span">Persinality:</span> Calm and collected,
+              perfect for advanced riders.
+            </p>
+            <p>
+              <span class="title-span">Achievements:</span> 2nd place in
+              National Dressage Championship
+            </p>
+            <p class="status">
+              <span class="title-span">Status:</span
+              ><span class="status-badge for-sale">For Sale</span>
+            </p>
+          </div>
+          <div class="horse-card scroll-animation scale" data-breed="warmblood">
+            <h2>Bella Luna</h2>
+            <img
+              src="img/horses/Warmblood-Horses-Westphalian-Horse.jpg"
+              alt="Bella Luna"
+              class="horse-image"
+            />
+            <p><span class="title-span">Breed:</span> Warmblood</p>
+            <p><span class="title-span">Age:</span> 5 years</p>
+            <p>
+              <span class="title-span">Training Level:</span> Intermediate
+              Jumping
+            </p>
+            <p>
+              <span class="title-span">Specialty:</span> Show Jumping, Cross
+              Country
+            </p>
+            <p>
+              <span class="title-span">Persinality:</span> Energetic and bold,
+              loves to jump high.
+            </p>
+            <p>
+              <span class="title-span">Achievements:</span> Winner of Regional
+              Jumping Event
+            </p>
+            <p class="status">
+              <span class="title-span">Status:</span
+              ><span class="status-badge for-rent">For Rent</span>
+            </p>
+          </div>
+          <div
+            class="horse-card scroll-animation scale"
+            data-breed="clydesdale"
+          >
+            <h2>Duke of Windsor</h2>
+            <img
+              src="img/horses/clydesdalebreed.jpg"
+              alt="Duke of Windsor"
+              class="horse-image"
+            />
+            <p><span class="title-span">Breed:</span> Clydesdale</p>
+            <p><span class="title-span">Age:</span> 10 years</p>
+            <p>
+              <span class="title-span">Training Level:</span> Beginner Dressage,
+              Trail Riding
+            </p>
+            <p>
+              <span class="title-span">Specialty:</span> Trail Riding, Dressage
+            </p>
+            <p>
+              <span class="title-span">Persinality:</span> Gentle giant, great
+              for beginners.
+            </p>
+            <p>
+              <span class="title-span">Achievements:</span> Popular for
+              therapeutic riding sessions
+            </p>
+            <p class="status">
+              <span class="title-span">Status:</span
+              ><span class="status-badge for-sale">For Sale</span>
+            </p>
+          </div>
+          <div class="horse-card scroll-animation scale" data-breed="arabian">
+            <h2>Stormy Knight</h2>
+            <img
+              src="img/horses/arabian.jpg"
+              alt="Stormy Knight"
+              class="horse-image"
+            />
+            <p><span class="title-span">Breed:</span> Arabian</p>
+            <p><span class="title-span">Age:</span> 6 years</p>
+            <p>
+              <span class="title-span">Training Level:</span> Advanced Eventing
+            </p>
+            <p>
+              <span class="title-span">Specialty:</span> Eventing, Endurance
+              Racing
+            </p>
+            <p>
+              <span class="title-span">Persinality:</span> Bold, responsive, and
+              fast.
+            </p>
+            <p>
+              <span class="title-span">Achievements:</span> Top 5 in
+              International Eventing Championship
+            </p>
+            <p class="status">
+              <span class="title-span">Status:</span
+              ><span class="status-badge own-stable">Stable</span>
+            </p>
+          </div>
+          <div
+            class="horse-card scroll-animation scale"
+            data-breed="hanoverian"
+          >
+            <h2>Bella Rose</h2>
+            <img
+              src="img/horses/hanoverian-web.jpg"
+              alt="Bella Rose"
+              class="horse-image"
+            />
+            <p><span class="title-span">Breed:</span> Hanoverian</p>
+            <p><span class="title-span">Age:</span> 4 years</p>
+            <p>
+              <span class="title-span">Training Level:</span> Novice Jumping
+            </p>
+            <p><span class="title-span">Specialty:</span> Show Jumping</p>
+            <p>
+              <span class="title-span">Persinality:</span> Sweet and eager to
+              learn
+            </p>
+            <p>
+              <span class="title-span">Achievements:</span> Best Young Jumper at
+              Local Competition
+            </p>
+            <p class="status">
+              <span class="title-span">Status:</span
+              ><span class="status-badge for-rent">For Rent</span>
+            </p>
+          </div>
+          <div
+            class="horse-card scroll-animation scale"
+            data-breed="quarterhorse"
+          >
+            <h2>Thunderstorm</h2>
+            <img
+              src="img/horses/American-Quarter-Horse-stallion.jpg"
+              alt="Thunderstorm"
+              class="horse-image"
+            />
+            <p><span class="title-span">Breed:</span> Quarter Horse</p>
+            <p><span class="title-span">Age:</span> 8 years</p>
+            <p>
+              <span class="title-span">Training Level:</span> Western Riding,
+              Barrel Racing
+            </p>
+            <p>
+              <span class="title-span">Specialty:</span> Barrel Racing, Western
+              Pleasure
+            </p>
+            <p>
+              <span class="title-span">Persinality:</span> Fast and alert, with
+              excellent focus.
+            </p>
+            <p>
+              <span class="title-span">Achievements:</span> Multiple wins in
+              Western Riding Circuit
+            </p>
+            <p class="status">
+              <span class="title-span">Status:</span
+              ><span class="status-badge own-stable">Stable</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer id="footer-space-container">
+      <!-- HERE IS PLACE FOR FOOTER LOADED FROM JS -->
+    </footer>
+    <script src="footer/footerloader.js"></script>
+    <script src="navbar/navbarloader.js"></script>
+    <script src="scripts/btn.js"></script>
+    <script src="scripts/horses.js"></script>
+    <script src="scripts/scrollanimation.js"></script>
+    <!-- <script src="about.js"></script> -->
+  </body>
+</html>

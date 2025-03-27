@@ -4,30 +4,8 @@ let autoSlideInterval;
 const dots = document.querySelectorAll(".dot");
 const slider = document.querySelectorAll(".slider");
 const video = document.querySelector(".slide-video");
-const content = document.querySelectorAll(".hidden");
 
 const scrollBtn = document.querySelectorAll("#scroll-btn");
-
-// Run on page load///
-document.addEventListener("DOMContentLoaded", function () {
-  /*  navbarSubHover(); */
-  function checkVisibility() {
-    content.forEach((img) => {
-      const rect = img.getBoundingClientRect();
-      const isVisible =
-        rect.top < window.innerHeight - 100 && rect.bottom > 100;
-
-      if (isVisible) {
-        img.classList.add("show");
-      } else {
-        img.classList.remove("show");
-      }
-    });
-  }
-
-  window.addEventListener("scroll", checkVisibility);
-  checkVisibility();
-});
 
 //Pridanie Listenera na bodky na slideroch . A vyvolavanie funkcie na zmenu a automaticku zmenu slidu
 dots.forEach(function (btn) {

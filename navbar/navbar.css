@@ -88,3 +88,85 @@ a {
   text-decoration: none;
   margin: 10px 0;
 }
+
+/* RESPOSIBLE SETTINGS FOR DIFFERENCE DEVICES */
+
+@media (max-width: 1024px) {
+  .div-navbar {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .div-navbar {
+    width: 80%;
+    text-align: center;
+    justify-content: space-between;
+  }
+
+  .hamburger-menu-navbar {
+    display: block;
+  }
+
+  .links-container {
+    position: fixed;
+    display: flex;
+    margin-top: 94px; /* Adjust this for your header height or space */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: 0.3s ease;
+    width: 250px; /* Sidebar width */
+    height: 100vh;
+    top: 0;
+    right: -100%; /* Initially hidden off-screen */
+    z-index: 999; /* Set a high z-index to make sure it's on top */
+    background-color: #111111;
+    padding-top: 20px; /* Space between the top and first link */
+  }
+
+  .links-container li {
+    margin-top: 30px;
+  }
+
+  /* Link Styles */
+  .links-container a {
+    font-size: 30px;
+    color: white; /* Link color */
+    padding: 15px 25px;
+    text-decoration: none; /* Remove underline */
+    border: 1px solid transparent; /* Remove red border */
+    margin-bottom: 10px; /* Space between links */
+    transition: 0.3s; /* Smooth transition for hover effect */
+  }
+
+  .links-container.active {
+    right: 0px;
+  }
+
+  .about-sub-container {
+    display: none;
+    position: static;
+    margin: 5px auto;
+    box-shadow: none;
+  }
+
+  .about-sub-ul {
+    all: unset;
+  }
+
+  .about-sub-li {
+    all: unset;
+    margin: 10px auto;
+  }
+
+  .about-sub-li a {
+    font-size: 14px;
+  }
+}
